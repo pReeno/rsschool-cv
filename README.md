@@ -39,6 +39,6 @@ Also it would be awesome if you add links to source code)
 http://l70012sx.beget.tech
 http://s70262f1.beget.tech
 
-7. Education (including courses, seminars, lectures, online learning) HTMLAcademy, SkillBox;
+7. Education (including courses, seminars, lectures, online learning) HTMLAcademy, SkillBox.
 8. English (elaborate on what kind of practice you had, if any, how long it lasted and so on) 
 I used English to communicate with people in computer games, went to courses for 6 months.
