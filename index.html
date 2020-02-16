@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
+</head>
+<body>
+    <div class="content">
+     <p>
+         <img src="photo.jpg" alt="photo" width="300" height="200"><br>
+        1. First Name, Last Name (real ones) <h2>Daniil Chsherbina</h2>
+        2. Contact Info (add several ways to contact you) <h3>email: preeno88@gmail.com, number: +77001216804</h3>
+        3. Summary (your goal, wishes, reveal what is important for you, what do you want and why.
+        Some kind of self-presentation. In case of lack of experience  Junior Developer sells his/her potential, his/her passion and ability to learn fast. You shouldn't think that everybody is going to teach you when you come to the workplace . Rather being a Junior means always
+        learning new things from everywhere etc.).
+        I want to gain experience, learn js, start learning ReactJS, communicate more with knowledgeable people and gain skills from them.<br>
+        4. Skills (e.g. programming languages, frameworks, methodologies, version control, tools etc.) HTML5, CSS3, LESS, PHP, JS(beginner), WordPress.<br>
+        5. Code examples (LATEST)
+        var chatContainer = document.querySelector('.chat-content');<br>
+        var messages = chatContainer.children;<br>
+        var newMessageForm = document.querySelector('.chat-form');<br>
+        var newMessageInput = newMessageForm.querySelector('.chat-form-input');<br>
+        var messageTemplate = document.querySelector('#message-template').content;<br>
+        var newMessageTemplate = messageTemplate.querySelector('.chat-message');<br>
+        <br>
+        newMessageForm.addEventListener('submit', function (evt) {<br>
+        evt.preventDefault();<br>
+        <br>
+        var messageText = newMessageInput.value;<br>
+        var newMessage = newMessageTemplate.cloneNode(true);<br>
+        newMessage.children[1].textContent = messageText;<br>
+        chatContainer.appendChild(newMessage);<br>
+        deleteMessageHandler(newMessage);<br>
+        newMessageInput.value = '';<br>
+        });<br>
+        var deleteMessageHandler = function (message) {<br>
+        var crossSign = message.querySelector('.chat-message-button');<br>
+        crossSign.addEventListener('click', function () {<br>
+        message.remove(); <br>
+        });    <br>
+        }<br>
+        for (var i = 0;i < messages.length;i++) {<br>
+        deleteMessageHandler(messages[i]);  <br>
+        }<br>
+        <br>
+        6. Experience (for a Junior Dev it means all kinds of experience: coding tests, projects from courses,<br>
+        freelance projects - wherever they had the opportunity to demonstrate skills they have.<br>
+        Also it would be awesome if you add links to source code)<br>
+        http://l70012sx.beget.tech<br>
+        http://s70262f1.beget.tech<br>
+        <br>
+        7. Education (including courses, seminars, lectures, online learning) HTMLAcademy, SkillBox;<br>
+        8. English (elaborate on what kind of practice you had, if any, how long it lasted and so on) <br>
+        I used English to communicate with people in computer games, went to courses for 6 months.<br>
+     </p>
+    </div>
+</body>
+</html>
